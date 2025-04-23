@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    .hero {
+      background: #0b2c3f;
+      color: white;
+      padding: 100px 0;
+    }
+    .hero img {
+      max-height: 400px;
+    }
+    .btn-primary, .btn-success {
+      margin-right: 10px;
+    }
+    .section-title {
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 40px 0 20px;
+    }
+    .service-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .stats {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .portfolio-images img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background:  #0b2c3f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+header{
+    background: #0b2c3f;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 150px; /* Adjusted from 150px to 50px */
+    display: flex;
+    align-items: center;
+}
+.container{
+   padding-left: 50px; /* Keep this consistent with the logo */
+    margin: 50px;
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+   margin-bottom: 0px;
+}
+.container img {
+    background: #0b2c3f; /* Set the background color */
+  }
+  nav a, nav button {
+    margin-right: 15px; /* Add spacing between elements */
+  }
+
+  nav img {
+    margin-left: 5px; /* Optional: Add spacing between images and links */
+  }
+  
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo {
+        padding-left: 0;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 50px 0;
+      }
+
+      .hero img {
+        max-height: 300px;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+
+      .stats .col {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+
+      .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+      }
+
+      .portfolio-images img {
+        width: 100%;
+        height: auto;
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
+    }
+</style>
+  </style>
+</head>
+
+<body>
+    <div style="position: fixed; top: 50%; right: 0; transform: translateY(-50%); background-color: #0d5580; padding: 10px; border-radius: 8px 0 0 8px; z-index: 1000;">
+        <a href="#" style="display: block; margin-bottom: 15px; text-align: center;">
+          <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Back" width="32" height="32">
+          <P style="color: #e0e0e0; text-decoration: none;">Back</P>
+        </a>
+        <a href="#" style="display: block; margin-bottom: 15px; text-align: center;">
+          <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Forward" width="32" height="32">
+          <P style="color: #e0e0e0; text-decoration: none;">forward</P>
+        </a>
+        <a href="#" style="display: block; margin-bottom: 15px; text-align: center;">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download" width="32" height="32">
+          <P style="color: #e0e0e0; text-decoration: none;">Download</P>
+        </a>
+        <a href="#" style="display: block; text-align: center;">
+          <img src="https://cdn-icons-png.flaticon.com/512/4290/4290854.png" alt="Buy" width="32" height="32">
+          <P style="color: #e0e0e0; text-decoration: none;">Buy</P>
+        </a>
+      </div>
+  <!-- Hero Section -->
+  <section class="hero text-center">
+            <header>
+                <div class="logo">
+                    <img src="https://storage.googleapis.com/a1aa/image/2dda61f8-0e62-4111-a720-e2e90027a702.jpg" alt="" width="24" height="24" draggable="false">
+                    <span>UI Portfolio</span>
+                </div>
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Blog</a>
+                    <a href="">Pages</a>
+                    <a href="">Contact</a>
+                    <button style="background-color: green;  border: none; border-radius: 50px; padding: 10px 20px; cursor: pointer;"><a href="inex.html">Hire me</a></button>
+                    <a href=""><img src="https://cdn0.iconfinder.com/data/icons/Toolbar_Icon_Set_by_shlyapnikova/32/search.png"/></a>
+                    <a href=""><img src="https://cdn3.iconfinder.com/data/icons/weather-260/200/night-256.png" width="35px" height="35px"/></a>
+                </nav>
+            </header>
+                <div class="container">
+                    <div style="text-align: left; padding-left: 50px;">
+                        <h1>Hi, I'm John Watson</h1>
+                        <h2 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);"><strong>Web De</strong></h2>
+                        <p>I love Graphic design and Photography and have been working on my portfolio since 2016. </p>
+                        <p>I can give your business a new Creative start right away!</p>
+                        <a href="inex.html" class="btn btn-success">Hire Me</a>
+                        <a href="https://portfolio-web-wheat-six.vercel.app/" class="btn btn-outline-light">My Portfolio</a>
+                      </div>
+                 <div> <img src="man.png" alt="John Watson"></div>
+                </div>
+  </section>
+
+  <!-- Biography -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="man3.png"  class="img-fluid" alt="Profile" width="300" height="400">
+      </div>
+      <div class="col-md-8" style="text-align: left;">
+        <h3>My Biography</h3>
+        <h2>A Lead UI Designer & Web Developer Based In UK</h2>
+        <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
+        <div style="display: inline-block; margin-right: 20px;">
+            <p><strong>Name:</strong> John Watson<br>
+            <strong>Email:</strong> wendon@gmail.com</p></div>
+        <div style="display: inline-block;">
+            <p><strong>From:</strong> UK<br>
+            <strong>Phone:</strong> +1 234 567 8901</p>
+        </div>
+        <div style="margin-bottom: 25px;">
+            <p style="margin-bottom: 0;"><strong>FOLLOW ME ON</strong></p>
+            <a href="https://www.facebook.com/profile.php?id=61550864113842&mibextid=rS40aB7S9Ucbxw6v" style="margin-right: 15px;"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/facebook-256.png" width="35" height="35" alt=""></a>
+            <a href="https://www.linkedin.com/in/margaret-sisia-074872328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="margin-right: 15px;"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-4-256.png" width="35" height="35" alt=""></a>
+            <a href="https://x.com/Sish835804?t=My1V4UILXUDNri4XY3XpvQ&s=09" style="margin-right: 15px;"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-256.png" width="35" height="35" alt=""></a>
+            <a href="https://vm.tiktok.com/ZMBn7Ff9u/" style="margin-right: 15px;"><img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/2840/tiktok-logo-256.png" width="35" height="35" alt=""></a>
+        </div>
+        <div>
+            <a href="inex.html" class="btn btn-success">Hire me</a>
+            <a href="https://silver-aveline-85.tiiny.site/" class="btn btn-outline-success" >Download CV </a>
+        </div>   
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-light py-5">
+    <div style="text-align: center;">
+        <h2 sclass="section-title">What I Do For You</h2>
+       </div>
+    <div class="container text-center">
+      <div class="row g-3">
+            <div class="col-md-4" style="background-color: white; padding: 20px; border-radius: 8px;">
+                <div class="service-box" style="background-color: white;">
+                    <img src="wpic.png" alt=""><br></br>
+                    <h5>Web Development</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
+                </div>
+            </div>
+                    <div class="col-md-4" style="background-color: white;  padding: 20px; border-radius: 8px;">
+                        <div class="service-box" style="background-color: white;">
+                            <img src="app pic.png" alt=""><br></br>
+                            <h5>App Development</h5>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
+                        </div>
+                    </div>
+                            <div class="col-md-4" style="background-color: white;  padding: 20px; border-radius: 8px;">
+                                <div class="service-box" style="background-color: white;">
+                                    <img src="phot pic.png" alt=""><br></br>
+                                    <h5>Photography</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
+                                </div>
+                            </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="#" style="text-decoration: none; color: #11815c;">More Services ➞</a>
+     </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="container py-5">
+    <div class="row">
+      
+      <div class="col-12" style="display: flex; align-items: center; margin-bottom: 20px;">
+        <div style="flex: 1; margin-right: 20px;">
+          <img src="fslls.png" class="img-fluid" alt="Skills">
+        </div>
+        <div style="flex: 2;">
+          <p>MY SKILLS</p>
+          <h2 style="white-space: nowrap;">My Featured Skills</h2>
+        </div>
+      </div>
+  
+      
+      <div class="col-12" style="display: flex; align-items: center; margin-bottom: 20px;">
+        <div style="flex: 1; margin-right: 20px;">
+          <img src="2pc.png" class="img-fluid" alt="Branding">
+        </div>
+        <div style="flex: 2;  padding: 20px;">
+          <p>I specialize in Branding and Strategy, and am passionate about creating awesome portfolio work. I always try to impress the audience with my creativity.</p>
+          <div style="margin-bottom: 10px;">
+            <p>UI/UX Design</p>
+            <div style="background-color: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+              <div style="width: 80%; background-color: #11815c; height: 100%;"></div>
+            </div>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <p>Ideas & Technology</p>
+            <div style="background-color: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+              <div style="width: 70%; background-color: #11815c; height: 100%;"></div>
+            </div>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <p>Branding Design</p>
+            <div style="background-color: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+              <div style="width: 90%; background-color: #11815c; height: 100%;"></div>
+            </div>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <p>Responsive Web Design</p>
+            <div style="background-color: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+              <div style="width: 85%; background-color: #11815c; height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features & Stats -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-5">
+        
+        <div class="col-md-6">
+          <div class="col-md-12" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <img src="1.png" width="32" height="32" alt="" style="margin-right: 10px;">
+              <strong>Web Development</strong>
+            </div>
+            <p style="margin: 0;">Larem ipsum vivers Libero set.</p>
+            <p style="margin: 0;">Pellen ut justo, in ligula at.</p>
+          </div>
+          <div class="col-md-12" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <img src="2.png" width="32" height="32" alt="" style="margin-right: 10px;">
+              <strong>Research & Analysis</strong>
+            </div>
+            <p style="margin: 0;">Larem ipsum vivers Libero set.</p>
+            <p style="margin: 0;">Pellen ut justo, in ligula at.</p>
+          </div>
+          <div class="col-md-12" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <img src="3.png" width="32" height="32" alt="" style="margin-right: 10px;">
+              <strong>Creative Design</strong>
+            </div>
+            <p style="margin: 0;">Larem ipsum vivers Libero set.</p>
+            <p style="margin: 0;">Pellen ut justo, in ligula at.</p>
+          </div>
+        </div>
+  
+        
+        <div class="col-md-6">
+          <div class="col-md-12" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <img src="4.png" width="32" height="32" alt="" style="margin-right: 10px;">
+              <strong>Brand Strategy</strong>
+            </div>
+            <p style="margin: 0;">Larem ipsum vivers Libero set.</p>
+            <p style="margin: 0;">Pellen ut justo, in ligula at.</p>
+          </div>
+          <div class="col-md-12" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <img src="5.png" width="32" height="32" alt="" style="margin-right: 10px;">
+              <strong>Marketing</strong>
+            </div>
+            <p style="margin: 0;">Larem ipsum vivers Libero set.</p>
+            <p style="margin: 0;">Pellen ut justo, in ligula at.</p>
+          </div>
+          <div class="col-md-12" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <img src="6.png" width="32" height="32" alt="" style="margin-right: 10px;">
+              <strong>Support</strong>
+            </div>
+            <p style="margin: 0;">Larem ipsum vivers Libero set.</p>
+            <p style="margin: 0;">Pellen ut justo, in ligula at.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom: 0;">
+        <img src="man2.png" alt="">
+      </div>
+    </div>
+  </section>
+  <div class="row mt-4 stats">
+    <div class="col"><strong style="font-size: 2rem; font-weight: bold;">135</strong> <br>Finished Projects</div>
+    <div class="col"><strong style="font-size: 2rem; font-weight: bold;">225</strong> <br>Working Hours</div>
+    <div class="col"><strong style="font-size: 2rem; font-weight: bold;">115</strong> <br>Online Support</div>
+    <div class="col"><strong style="font-size: 2rem; font-weight: bold;">272</strong> <br>Happy Customers</div>
+  </div>
+
+  <!-- Portfolio -->
+  <section class="py-5 bg-light">
+    <div class="mb-4 text-center">
+      <h2 class="text-center">My Success Work</h2>
+    </div>
+    <div class="row portfolio-images justify-content-center">
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <img src="sw.png" alt="Project 1" style="width: 600px; height: auto;">
+      </div>
+    </div>
+    <div style="margin: 0; padding: 0;">
+      <img src="pic1.png"width="100%" style="display: block; margin: 0; padding: 0;" alt="">  
+    </div>
+  </section>
+    <br></br>
+    <br></br>
+  <!-- Footer -->
+  <footer>
+    <div style="margin-top: 50px;">
+        <img src="https://storage.googleapis.com/a1aa/image/2dda61f8-0e62-4111-a720-e2e90027a702.jpg" alt="" width="24" height="24" draggable="false">
+        <span>UI Portfolio</span> 
+    </div>
+    <div class="container text-center">
+        <p style="align-items: center; margin-left: 370px;">📞 +12 345 678 910 | 📧 wendon@gmail.com | 📍 208 Avenue street, UK - 62617</p>
+    </div>
+    
+  </footer>
+  <div style="background-color: #0d5580; margin: 0; padding: 20px 0;">
+    <div style="background-color: #0d5580; margin: 0; padding: 20px 0; text-align: center;">
+        <p style="margin: 0; color: white; font-size: 1.2rem; display: inline-block;">&copy; 2022 UI Portfolio. All Rights Reserved</p>
+        <a href="https://vm.tiktok.com/ZMBn7Ff9u/"> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2421/512/TikTok-64.png" width="32" height="32" alt="" style="display: inline-block; margin-left: 10px;"> </a>
+        <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Snapchat-64.png" width="32" height="32" alt="" style="display: inline-block; margin-left: 10px;">
+        <a href="https://www.linkedin.com/in/margaret-sisia-074872328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/56-linkedin-64.png" width="32" height="32" alt="" style="display: inline-block; margin-left: 10px;"></a>
+        <a href="https://www.instagram.com/margaretsisia88?igsh=YzljYTk1ODg3Zg== "><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-64.png" width="32" height="32" alt="" style="display: inline-block; margin-left: 10px;"></a>
+    </div>
+  </div>
+</body>
+
+</html>
