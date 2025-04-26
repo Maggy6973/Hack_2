@@ -1,3 +1,10 @@
+#GROUP MEMBERS
+ 1. Margaret Sisia     - margaretsisia88@gmail.com
+ 2. Boledi Sakong      - sakonglerato@gmail.com
+ 3. Wamuyu Wachira     - michellewachira25@gmail.com	
+ 4. Stephen Machaki    - steffie.kmachaki50@gmail.com
+ 5. Kennedy Onyango    - onyangoken1994@gmail.com
+
 # UI Portfolio Website
 
 This project is a portfolio website designed to showcase the skills, services, and projects of a web developer and UI designer. Below is a detailed explanation of the structure and functionality of the code.
